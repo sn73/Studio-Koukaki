@@ -1,0 +1,37 @@
+/***** SECTION OSCAR ******/
+
+.oscar {
+    display: flex;
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 0;
+    &::before {
+       @include rotate;
+       content: url("../assets/images/Sunflower.png");
+       position: absolute;
+       top: 1%;
+       left: 2%;
+    }
+    &::after {
+       @include rotate;
+       content: url("../assets/images/orchid.png");
+       position: absolute;
+       right: -5%;
+       top: -5%;
+    }
+    .oscar__text {
+       position: relative;
+       left: 155px;
+ 
+       color: #fff;
+       max-width: 830px;
+       height: 330px;
+       text-align: left;
+    }
+    .nomin {
+       position: absolute;
+       padding-top: 200px;
+       right: 14%;
+       bottom: 35%;
+    }
+ } 

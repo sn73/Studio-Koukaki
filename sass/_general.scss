@@ -1,0 +1,19 @@
+html {
+   body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+   }
+}
+
+.site {
+   overflow: hidden;
+}
+
+.anim {
+   animation: 1s 1 both up-section;
+   &__reverse {
+      animation: 1s 1 both down-section;
+   }
+}

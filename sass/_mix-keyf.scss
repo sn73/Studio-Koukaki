@@ -1,0 +1,75 @@
+/******* PARTIE MIXINS ********/
+
+@mixin rotate {
+    animation: 16s infinite linear rotation__fleur;
+}
+
+@mixin rotate-foot {
+    animation: 28s infinite linear rotation__fleur;
+}
+
+@mixin flottement {
+    animation: 5s infinite linear effet_flottement;
+}
+
+@mixin cat-flot-purple {
+    animation: 1s infinite alternate cat-flot-purple;
+}
+@mixin cat-flot-grey {
+    animation: 1s infinite alternate cat-flot-grey;
+}
+@mixin cat-flot-orange {
+    animation: 1s infinite alternate cat-flot-orange;
+}
+
+@mixin title-menu-burger {
+    animation: 1s 1 both title-menu-up;
+}
+/******* PARTIE KEYFRAMES ********/
+
+@keyframes rotation__fleur {
+    from { transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+/*** EFFET BANNIERE ***/
+
+@keyframes effet_flottement {
+    0% { margin-left:0; }
+    20% { margin-left:100px; }
+    40% { margin-top:40px; margin-left: 20px; }
+    60% { margin-right:80px; }
+    80% { margin-bottom: 40px; }
+    100% { margin-right: 0px;}
+}
+
+/*** EFFET APPARITION SECTION ***/
+
+@keyframes up-section {
+    from{ opacity:0;transform:translateY(0) }
+    to{ opacity:1;transform:translateY(-100px) }
+  }
+@keyframes down-section {
+    from{ opacity:0;transform:translateY(-100px) }
+    to{ opacity:1;transform:translateY(0) }
+  }
+
+/*** EFFET CHAT MENU BURGER ***/
+
+@keyframes cat-flot-purple {
+    from { top: -130%;}
+    to { top: -110%;}
+}
+@keyframes cat-flot-grey {
+    from { top: 0%;}
+    to { top: 20%;}
+}
+@keyframes cat-flot-orange {
+    from { top: 100%;}
+    to { top: 120%;}
+}
+
+@keyframes title-menu-up {
+    from{ opacity: 0; transform:translateY(100px);}
+    to{opacity: 1; transform: translateY(0px);}
+}

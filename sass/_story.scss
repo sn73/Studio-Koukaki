@@ -1,0 +1,46 @@
+/***** SECTION HISTOIRE *****/
+
+.story {
+   margin-top: 100px;
+   h2 {
+      &::before {
+         left: 0%;
+         top: 5%;
+      }
+      &::after {
+         left: 3%;
+         top: 17%;
+      }
+   }
+   &__article {
+      animation: none;
+      &::before {
+         top: 7.5%;
+      }
+      &::after {
+         @include rotate;
+         left: 79%;
+         top: 3%;
+      }
+   }
+   h2::after {
+      @include rotate;
+      height: 155px;
+      width: 155px;
+   }
+   .title_up {
+      animation-delay: 0.8s;
+   }
+   #characters {
+      margin: 15em 0em 0em 0em;
+      .main-character {
+         height: 600px;
+      }
+   }
+   #place {
+      > div {
+         width: 100%;
+         max-width: 100%;
+      }
+   }
+}

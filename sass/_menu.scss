@@ -1,0 +1,210 @@
+/****** PARTIE MENU ******/
+
+.main-navigation {
+   position: fixed;
+   max-width: 1440px;
+   li {
+      display: none;
+   }
+   .name-site {
+      display: none;
+   }
+   // Içi commence les modifs du menu burger
+   &.toggled {
+      height: 100vh;
+      max-width: 1440px;
+      position: fixed;
+      transform: translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+      &::before {
+         background-image: url("../assets/images/logo_koukaki.png");
+      }
+      .nav-menu {
+         overflow: hidden;
+      }
+      li {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         font-size: 6vh;
+         padding: 40px;
+         a {
+            @include title-menu-burger;
+         }
+         &:hover {
+            text-shadow: 0px 0px 14px #ff5c00;
+            a {
+               color: black;
+            }
+         }
+         &.site-title {
+            position: absolute;
+            top: -1.4%;
+            font-size: 21.5px;
+            left: 35.5%;
+            &:hover {
+               text-shadow: none;
+            }
+            a {
+               animation: none;
+            }
+         }
+      }
+      ul {
+         display: block;
+         height: calc(100vh - 6vh);
+         background-color: #fff5e9;
+         margin-top: 80px;
+         // Insertion du logo dans le menu burger
+         .logo {
+            display: flex;
+            position: relative;
+            left: 43%;
+            top: 2%;
+            padding-bottom: 25px;
+         }
+      }
+      .name-site {
+         display: flex;
+         position: relative;
+         justify-content: center;
+         top: 13%;
+         font-size: 20px;
+      }
+      .flower-burger {
+         position: relative;
+         &::before {
+            @include rotate;
+            content: "";
+            background-image: url("../assets/images/orchid.png");
+            position: absolute;
+            left: -4%;
+            width: 170px;
+            height: 170px;
+            bottom: 50%;
+         }
+         &::after {
+            @include rotate;
+            content: "";
+            background-image: url("../assets/images/Sunflower.png");
+            position: absolute;
+            right: 13%;
+            bottom: -2%;
+            height: 216px;
+            width: 216px;
+         }
+      }
+      .perso {
+         &::before {
+            @include cat-flot-purple;
+            content: "";
+            background-image: url("../assets/images/purple-cat.png");
+            position: absolute;
+            width: 114px;
+            height: 114px;
+            left: 20%;
+            top: -110%;
+         }
+         &::after {
+            @include rotate;
+            content: "";
+            background-image: url("../assets/images/little-purple-flower.png");
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 76px;
+            height: 76px;
+            right: -2.5%;
+            top: 55%;
+         }
+      }
+      .lieu {
+         &::before {
+            @include rotate;
+            content: "";
+            background-image: url("../assets/images/Flower-star.png");
+            position: absolute;
+            width: 71px;
+            height: 71px;
+            left: 13%;
+            top: 7%;
+         }
+         &::after {
+            @include cat-flot-grey;
+            content: "";
+            background-image: url("../assets/images/grey-cat.png");
+            position: absolute;
+            width: 155px;
+            height: 148px;
+            right: 13%;
+            top: 0%;
+         }
+      }
+      .stud {
+         &::before {
+            @include cat-flot-orange;
+            content: "";
+            background-image: url("../assets/images/orange-cat.png");
+            position: absolute;
+            width: 106px;
+            height: 96px;
+            left: 5%;
+            top: 100%;
+         }
+         &::after {
+            @include rotate-foot;
+            content: "";
+            background-image: url("../assets/images/Hibiscus-burger.png");
+            position: absolute;
+            width: 640px;
+            height: 640px;
+            overflow: hidden;
+            left: 78%;
+            top: 66%;
+         }
+      }
+      .line {
+         display: none;
+      }
+   }
+   .line {
+      margin-block: 8px;
+   }
+   // Masquage du logo dans le menu classique
+   .logo {
+      display: none;
+   }
+   .menu-toggle {
+      display: block;
+   }
+   .croix span {
+      display: block;
+
+      &:first-child {
+         display: block;
+         position: relative;
+         top: 10px;
+         transform: rotate(45deg);
+      }
+
+      &:last-child {
+         display: block;
+         position: relative;
+         transform: rotate(-45deg);
+      }
+   }
+}
+.menu-toggle {
+   position: absolute;
+   right: 100px;
+   top: 11px;
+   display: flex;
+   flex-direction: column;
+   &.responsive {
+      height: 100vh; /* Hauteur maximale du menu en plein écran */
+   }
+   .line {
+      height: 2px;
+      width: 40px;
+   }
+}

@@ -1,0 +1,38 @@
+// Ajout du fichier contenant mixins et keyframes
+@import "mix-keyf";
+
+// Ajout des modifications générales
+@import "general";
+
+// Ajout de la section menu et menu burger
+@import "menu";
+
+// Ajout de la section lieu
+@import "place";
+
+// Ajout de la section banner
+@import "banner";
+
+// Ajout de la section histoire
+@import "story";
+
+// Ajout de la section personnages
+@import "characters";
+
+// Ajout de la section studio
+@import "studio";
+
+// Ajout de la section oscar
+@import "oscar";
+
+// Ajout de la section footer
+@import "footer";
+
+// Ajout du fichier de la partie responsive mobile
+@import "responsive-mobile";
+
+// Ajout du fichier de la partie responsive tablet
+@import "responsive-tablet";
+
+// Ajout du fichier de la partie responsive laptop avec une résolution 1024px
+@import "responsive-laptop";

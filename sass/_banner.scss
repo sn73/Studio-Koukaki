@@ -1,0 +1,14 @@
+/***** PARTIE HERO *****/
+
+.banner {
+    overflow: hidden;
+    margin-top: 80px;
+    .video {
+       width: 100%;
+       position: absolute;
+    }
+    .text-banner {
+       @include flottement;
+    }
+ }
+ 

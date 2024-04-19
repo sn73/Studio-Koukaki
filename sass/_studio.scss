@@ -1,0 +1,21 @@
+/***** SECTION STUDIO KOUKAKI ******/
+
+#studio {
+   margin: 0;
+   h2::before {
+      @include rotate;
+      top: 0%;
+      left: -3%;
+   }
+   h2::after {
+      @include rotate;
+      right: 6%;
+      top: 22%;
+   }
+   .title_up {
+      animation-delay: 0.8s;
+      &--second {
+         animation-delay: 1.2s;
+      }
+   }
+}

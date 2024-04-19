@@ -1,0 +1,15 @@
+/**** SECTION FOOTER *****/
+
+.site-footer {
+   padding-top: 215px;
+   &::before {
+      display: none;
+   }
+   &::after {
+      display: none;
+   }
+   ul:after {
+      bottom: -160%;
+      @include rotate-foot;
+   }
+}

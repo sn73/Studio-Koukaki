@@ -1,0 +1,100 @@
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+   .banner {
+      min-height: 575px;
+   }
+   .story {
+      h2 {
+         &::after {
+            left: 4.2%;
+         }
+      }
+      &__article {
+         &::after {
+            left: 73.5%;
+            top: 4%;
+         }
+      }
+      #characters {
+         .swiper {
+            padding: 50px 0 90px 0;
+            .swiper-slide {
+               h4 {
+                  font-size: 2vw;
+               }
+            }
+         }
+         h3 {
+            position: relative;
+            right: 45%;
+         }
+      }
+      &__article::before {
+         top: 9%;
+      }
+   }
+   #place {
+      .little-cloud {
+         animation: none;
+         right: 25%;
+         top: 25%;
+      }
+      .big-cloud {
+         animation: none;
+         top: -20%;
+         right: 0%;
+      }
+      > div {
+         padding-top: 140px;
+         margin: auto 0 !important;
+      }
+   }
+   #studio {
+      h2::after {
+         top: 7%;
+         right: 4%;
+      }
+   }
+   .oscar {
+      padding-bottom: 0;
+      &::before {
+         top: -8%;
+         left: 2%;
+      }
+      &__text {
+         left: 12% !important;
+         max-width: 610px !important;
+         font-size: 3vw !important;
+      }
+   }
+   .nomin {
+      right: 10% !important;
+      top: -8% !important;
+   }
+   .main-navigation {
+      &.toggled {
+         .flower-burger {
+            &::after {
+               right: 5%;
+               bottom: 10%;
+            }
+         }
+         .name-site {
+            top: 10%;
+         }
+         .stud {
+            &::after {
+               left: 69%;
+               top: 26%;
+            }
+         }
+         .logo {
+            left: 40%;
+         }
+         .nav-menu {
+            .site-title {
+               left: 29.5%;
+            }
+         }
+      }
+   }
+}

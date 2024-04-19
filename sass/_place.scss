@@ -1,0 +1,30 @@
+/***** PARTIE LIEU *****/
+
+#place {
+   > div {
+      position: relative;
+      p {
+         max-width: 520px;
+      }
+   }
+   .blur {
+      filter: blur(11px);
+   }
+   .big-cloud {
+      position: absolute;
+      right: 100px;
+      top: 60px;
+   }
+   .little-cloud {
+      position: absolute;
+      right: 500px;
+      top: 260px;
+   }
+   .cloud {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+   }
+}
